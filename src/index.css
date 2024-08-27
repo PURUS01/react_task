@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+.contain{
+    
+    display: flex;
+    
+    height: 100vh;
+    /* overflow: hidden; */
+    /* background-color: yellow; */
+    width: 100%;
+    align-items: center;
+}
+
+/* sidebar */
+.sidebar {
+    height: 100vh; 
+    background: #020d18    ;
+    color: white;
+    /* width: 200px; */
+    transition: all 0.5s;
+    border: 1px solid lightskyblue;
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    z-index: 4;
+}
+
+
+.top_section{
+    display: flex;
+    align-items: center;
+    padding: 25px 15px;
+    /* gap: 10px; */
+    
+    
+}
+.logo{
+    font-size: 30px;
+
+}
+.bars{
+    display: flex;
+    margin-left: 50px;
+    font-size: 25px;
+    transition: .5s;
+}
+.bars:hover{
+    font-size: 32px;
+}
+.link{
+    display: flex;
+    color: white;
+    padding:10px 15px;
+    gap: 15px;
+    align-items: center;
+    transition: all .5s;
+    text-decoration: none;
+
+}
+.link:hover{
+    background: transparent;
+    color: lightskyblue;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 2px solid lightskyblue;
+    border-right: none;
+    
+
+}
+.active{
+    background: lightskyblue;
+    color: black;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: none;
+}
+.icon,.link_text{
+    font-size: 20px;
+}
+
+/* toolbar */
+
+.toolbar {
+    height: 60px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom-right-radius: 20px;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    
+    
+}
+
+.toolbar-icons .icon {
+    color: black;
+    font-size: 24px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition:.5s;
+}
+.toolbar-icons .icon:hover{
+    color: lightskyblue;
+}
+
+
+main{
+    
+    padding: 0;
+    /* background-color: yellow; */
+    overflow: auto;
+    
+}
+.container-fluid{
+    overflow: auto;
+    transition: .5s;
+}
